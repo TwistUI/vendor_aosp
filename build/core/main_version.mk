@@ -26,8 +26,11 @@ endif
 
 # Versioning props
 ADDITIONAL_SYSTEM_PROPERTIES  += \
-    org.pixelexperience.version=$(CUSTOM_VERSION_PROP) \
-    org.pixelexperience.version.display=$(CUSTOM_VERSION) \
-    org.pixelexperience.build_date=$(CUSTOM_BUILD_DATE) \
-    org.pixelexperience.build_date_utc=$(CUSTOM_BUILD_DATE_UTC) \
-    org.pixelexperience.build_type=$(CUSTOM_BUILD_TYPE)
+    org.twistui.version=$(TWISTUI_BASE_VERSION) \
+    org.twistui.version.display=$(CUSTOM_VERSION) \
+    org.twistui.build_date=$(CUSTOM_BUILD_DATE) \
+    org.twistui.build_date_utc=$(CUSTOM_BUILD_DATE_UTC) \
+    org.twistui.build_type=$(CUSTOM_BUILD_TYPE) \
+    org.twistui.codename=$(TWISTUI_BASE_VERSION) \
+    org.twistui.build_version=$(TWISTUI_BUILD_VERSION) \
+    ro.twistui.maintainer=$(TWISTUI_MAINTAINER)
