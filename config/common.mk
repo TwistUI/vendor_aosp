@@ -54,7 +54,7 @@ PRODUCT_COPY_FILES += \
 
 # Copy all custom init rc files
 PRODUCT_COPY_FILES += \
-    vendor/aosp/prebuilt/common/etc/init/init.twistui-updater.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/init.twistui-updater.rc
+    vendor/aosp/prebuilt/common/etc/init/init.twistui-updater.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/init.twistui-updater.rc \
 
 # Enable Android Beam on all targets
 PRODUCT_COPY_FILES += \
