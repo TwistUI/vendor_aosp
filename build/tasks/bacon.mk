@@ -25,8 +25,6 @@ bacon: $(INTERNAL_OTA_PACKAGE_TARGET)
 	$(hide) $(SHA256) $(CUSTOM_TARGET_PACKAGE) | sed "s|$(PRODUCT_OUT)/||" > $(CUSTOM_TARGET_PACKAGE).sha256sum
 	$(hide) $(MD5) $(CUSTOM_TARGET_PACKAGE) | sed "s|$(PRODUCT_OUT)/||" > $(CUSTOM_TARGET_PACKAGE).md5sum
 	$(hide) ./vendor/aosp/build/tools/createjson.sh $(TARGET_DEVICE) $(PRODUCT_OUT) $(CUSTOM_VERSION).zip $(TWISTUI_BASE_VERSION)
-	$(hide) ./vendor/aosp/build/tools/changelog.sh
-	$(hide) mv Changelog.txt $(CUSTOM_TARGET_PACKAGE).txt
 	@echo -e ${CL_CYN}""${CL_CYN}
 	@echo -e ${CL_CYN}"   TwistUI Aosp Project By Arijit Saha   "${CL_CYN}
 	@echo -e ${CL_CYN}""${CL_CYN}
