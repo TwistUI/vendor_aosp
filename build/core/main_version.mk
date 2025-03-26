@@ -29,4 +29,6 @@ ADDITIONAL_SYSTEM_PROPERTIES  += \
     org.twistui.build_type=$(CUSTOM_BUILD_TYPE) \
     org.twistui.codename=$(TWISTUI_BASE_VERSION) \
     org.twistui.build_version=$(TWISTUI_BUILD_VERSION) \
-    ro.twistui.maintainer=$(TWISTUI_MAINTAINER)
+    ro.twistui.maintainer=$(TWISTUI_MAINTAINER) \
+    ro.twistui.build.version=$(TWISTUI_VERSION) \
+    ro.twistui.build.codename=$(TWISTUI_CODENAME)
